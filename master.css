@@ -1,0 +1,313 @@
+/*Custom font import command*/
+@font-face {
+    font-family: larabie;
+    src: url(larabiefont\ rg.otf);
+}
+
+/*index.html page*/
+.title-screen-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 20px;
+    
+}
+
+h5 {
+    font-family: 'Source Code Pro';
+    text-align: center;
+}
+
+.center-block {
+    width: 270px;
+    margin: auto;
+}
+
+.name-block {
+    display: inline-block;
+    text-align: right;
+
+}
+
+.character-block {
+    display: inline-block;
+    text-align: left;
+    
+}
+
+/*Curser for typing out full name */
+.cursor {
+    display: inline-block;
+    animation: blink 1s linear infinite;
+    
+}
+
+/*does the key frame animation for the cursor*/
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+/*Start of button code taken from: https://codepen.io/t_afif/pen/bGooZmq */
+button {
+    --border: 3px;    /* the border width */
+    --slant: 0.7em;   /* control the slanted corners */
+    --color: #2fb9ec; /* the color */
+    
+    font-size: 35px;
+    padding: 0.2em 1.0em;  /*changes the size of button*/
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color);
+    background: 
+       linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+       linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+    background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+    background-repeat: no-repeat;
+    box-shadow:
+      0 0 0 200px inset var(--s,#0000),
+      0 0 0 var(--border) inset var(--color);
+    clip-path: 
+        polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+                100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+               );
+    transition: color var(--t,0.3s), background-size 0.3s;
+  }
+  button:focus-visible {
+    outline-offset: calc(-1*var(--border));
+    outline: var(--border) solid #000c;
+    clip-path: none;
+    background-size: 0 0;
+  }
+  button:hover,
+  button:active{
+    background-size: 100% 100%;
+    color: #fff;
+    --t: 0.2s 0.1s;
+  }
+  button:active {
+    --s: #0005;
+    transition: none;
+  }
+  /*End of button code */
+
+.button-blink {
+    animation: blink 1.5s linear infinite;
+}
+  
+.center-button {
+    font-family: 'Source Code Pro';
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 20px;
+}
+
+
+/*portfolio_menu.html page*/
+.title-menu {
+    font-family: 'Source Code Pro';
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-border-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    width: 55%;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2fb9ec;
+
+    /*round corners of border*/
+    border-radius: 5px;
+
+    /*Creates glow effect*/
+    box-shadow: 0px 0px 45px 15px #2fb9ec;
+}
+
+.menu-red-highlight {
+    font-weight: bold;
+    color: #ed2427;
+}
+
+.menu-blue-highlight {
+    font-weight: bold;
+    color: #2fb9ec;
+}
+
+.menu-introduction {
+    font-family: 'Source Code Pro';
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a.quest-link {
+    font-family: larabie;
+    color: #ed2427;
+    text-decoration: none;
+}
+
+a.quest-link:visited {
+    color: #2fb9ec;
+}
+
+.quest {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+a.level-link {
+    font-family: larabie;
+    color: #ed2427;
+    text-decoration: none;
+}
+
+a.level-link:hover {
+    color:#2fb9ec
+}
+
+.complete-quest {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.project-title-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 10%;
+}
+
+.project-title {
+    font-family: 'Source Code Pro';
+    text-align: center; 
+    padding-top: 22px;
+    padding-bottom: 10px;
+}
+
+.title-color {
+    color: #ed2427;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+a#scrum-link {
+    color: #ed2427;
+    text-decoration: none;
+}
+
+a#scrum-link:hover {
+    color: #2fb9ec;
+}
+
+.caption {
+    color:#2fb9ec;
+    font-weight: 635;
+}
+
+/*vertical-align helps align all div elements to the top of the container
+originally the raider-description was lower than the trader-description.
+This fixes it*/
+.description {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 49%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.title-center {
+    text-align: center;
+}
+
+#department-rules {
+    text-align: left;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-size {
+    width: 101px;
+    height: 101px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.software-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.galaxy-space {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#title-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.ship-align {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.ship-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

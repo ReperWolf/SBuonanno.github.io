@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Traders and Raiders</title>
+
+    <!--Personal style sheet-->
+    <link href="master.css" rel="stylesheet">
+
+    <!--Boostrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="project-title">
+        <h3 class="title-color">Space Traders and Raiders</h3>
+        <h4>
+            COM 429 Professional Game Production
+        </h4>
+    </div>
+
+    <div class="menu-border-container">
+        <div class="menu-introduction">
+            <h5 class="title-color">Overview</h5>
+            <p>
+                The main purpose of this class was to simulate operating as a game development company
+                and the professor would be our "client" who approached us with a GDD he created. This GDD
+                was based on a boardgame concept he designed and wanted us to turn it into a variant of his concept. 
+                Each student had to decide what department they wanted to be in and if they wanted to be head of 
+                that department. The overall timeline was to create a revised GDD, alpha, beta and deliverable builds 
+                within 1 semester or roughly 4 months. In order to stay consistent with deadlines and meetings we used 
+                <span><a id="scrum-link" target="_blank" href="https://www.atlassian.com/agile/scrum">SCRUM</a></span> 
+                during the entire production. Collectively, the entire class agreed to maintain the original 
+                concept as best as we could and decided to create a virtual turn-based 2D sci-fi strategy game.
+
+
+            </p>
+
+            <figure>
+                <img src="Images/COM429_Hierarchy.svg" alt="Class Hierarchy Diagram" class="image-center">
+                <figcaption id="management-structure-caption" class="caption">Management structure within the class</figcaption>
+            </figure>
+
+            <h5 class="title-color">Game Concept</h5>
+            <p>
+                While reviewing the original GDD it has a very similar feel to Stellaris and
+                Sid Meier's Civilizaiton games, so we decided to create the game with similar atmoshpere. There are 4 races
+                within the game each having their own unique cultural background and allows up to 4 people to
+                play. Each player starts out with 1 home system and ship with the goal of expanding their empire
+                across the galaxy. Once players reach a certain point in the game they will either have to choose,
+                become a trader or raider. The path that the player chooses will determine what unique set of rules
+                the player must follow to then win the game.
+            </p>
+
+            <div id="trader-and-raider">
+                <div id="trader-description" class="description">
+                    <h6 class="title-color title-center">Trader Rules</h6>
+                    <ul>
+                        <li>Able to control more than one system.</li>
+                        <li>Allowed to trade with other traders with the benefit
+                            of not having any restirctions on trade. Traders can
+                            custom trade anything and are not restricted to fixed pricing.
+                        </li>
+                        <li>NOT allowed to initiate combat.</li>
+                    </ul>
+                </div>
+
+                <div id="raider-desicription" class="description">
+                    <h6 class="title-color title-center">Raider Rules</h6>
+                    <ul>
+                        <li>Allowed to initiate combat.</li>
+                        <li>Able to hold more minerals on ships that count towards 
+                        their victory conditions.
+                        </li>
+                        <li>Can raid systems and farm the resources from destroyed ships.</li>
+
+                    </ul>
+    
+                </div>
+            </div>
+
+
+            <div id="STAR-role">
+                <h5 class="title-color">Role: Lead Artist</h5>
+            <p>
+                I decided on the Lead Artist role because I wanted to understand the coordination of artists being able to
+                produce assets together and how that corrolates with the other departments as a whole. Within 
+                the 'Art Department' there were 8 artists including myself and I had the challenge of
+                delegating tasks to each student who all have varying schedules. In addition to being Lead Artist 
+                I assisted in conflicts within the class and organized meetings associated with the Art Department 
+                along with separate meetings including the producer and leads.
+            </p>
+
+            <p>
+                Once tasks were established I had all artists create their own workloads including myself. This 
+                was the optimal choice to help balance workloads and have artists select tasks that interested them. To also 
+                help assist keeping the department on track with deadlines, work completion and preventing burnout I created 
+                some guidelines:
+            </p>
+            </div>
+            
+
+            <div id="department-rules">
+                <ol>
+                    <li>
+                        Art Department meetings will be held once a week outside of class to stay 
+                        up to date on what is completed, in progress and any issues that need to be 
+                        resolved.
+                    </li>
+                    <li>Select the tasks that you are confident in completing in a timely manner.</li>
+                    <li>
+                        If all your tasks are completed ahead of time and with approval I will assign 
+                        you to assist any fellow artist that are requesting assistance.
+                    </li>
+                </ol>
+            </div>
+            
+
+            <h5 class="title-color">Software and Design</h5>
+            <div id="STAR-software-logos">
+                
+                <figure class="software-logo">
+                    <img id="unity-logo" src="Images/Logos/Unity_logo.png" alt="Unity Logo" class="logo-size">
+                    <figcaption id="unity-caption" class="caption">Unity</figcaption>
+                </figure>
+
+                <figure class="software-logo">
+                    <img id="aseprite-logo" src="Images/Logos/Aseprite_logo.png" alt="Aseprite Logo" class="logo-size">
+                    <figcaption id="aseprite-caption" class="caption">Aseprite</figcaption>
+                </figure>
+
+                <figure class="software-logo">
+                    <img id="piskel-logo" src="Images/Logos/Piskel_logo.png" alt="Piskel Logo" class="logo-size">
+                    <figcaption id="piskel-caption" class="caption">Piskel</figcaption>
+                </figure>
+
+            </div>
+            <p>
+               The chosen style of the game was pixel art since assets can be created fairly easily without
+               any prior experience. Aseprite is a pixel art design program that can be bought through Steam
+               and that was the program I used for my assets. Some of the artists didn't want to purchase 
+               Aseprite so I found an alternative, which I have used in the past call Piskel. Piskel is a 
+               free pixel art program that is web-based and only requires creating an account. The project was 
+               built using the game engine Unity because all of our programmers were most familiar with it. Below 
+               are the assets I created for this project: 
+            </p>
+
+            <div id="STAR-assets">
+
+                <figure>
+                    <img id="title-image" src="Images/Raiders title screen.png" alt="Space Traders and Raiders Title Screen">
+                    <figcaption id="title-caption" class="caption">Title Screen of the 4 Races in the Game</figcaption>
+                </figure>
+
+                <div id="galaxy-assets">
+                    <figure>
+                        <img src="Images/Galaxies/Galaxy 1.png" alt="Galaxy 1" class="galaxy-space">
+                        <img src="Images/Galaxies/Galaxy 2.png" alt="Galaxy 2" class="galaxy-space">
+                        <img src="Images/Galaxies/Galaxy 3.png" alt="Galaxy 3" class="galaxy-space">
+                        <img src="Images/Galaxies/Galaxy 4.png" alt="Galaxy 4" class="galaxy-space">
+                        <img src="Images/Galaxies/Galaxy 5.png" alt="Galaxy 5" class="galaxy-space">
+                        <img src="Images/Galaxies/Galaxy 6.png" alt="Galaxy 6" class="galaxy-space">
+                        <figcaption id="galaxy-caption" class="caption">
+                            Galaxy Grid System as the Board/Background
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <h5 class="title-color ship-title">Fungi Race</h5>
+                <p>
+                    The Fungi race has a fleet that looks like a collection of different ships from the other races, 
+                    this is because their biology as a race is intertwined with technology. Because of their biology 
+                    and adaptability it allows them to take control over technology that is foreign to them and create 
+                    it as their own.
+                </p>
+
+                <div id="fungi-ships">
+                    <figure class="ship-align">
+                        <img src="Images/Fungi_ships/Fungi_Frigate.png" alt="Fungi Frigate">
+                        <figcaption class="caption">Fungi Frigate</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Fungi_ships/Fungi_Cruiser.png" alt="Fungi Cruiser">
+                        <figcaption class="caption">Fungi Cruiser</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Fungi_ships/Fungi_Battleship.png" alt="Fungi Battleship">
+                        <figcaption class="caption">Fungi Battleship</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Fungi_ships/Fungi_Destroyer.png" alt="Fungi Destroyer">
+                        <figcaption class="caption">Fungi Destroyer</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Fungi_ships/Fungi_Destroyer.png" alt="Fungi Dreadnaught">
+                        <figcaption class="caption">Fungi Dreadnaught</figcaption>
+                    </figure>
+                </div>
+
+
+                <h5 class="title-color ship-title">Hive Race</h5>
+                <p>
+                    Similar to bees the Hive race has a queen who is bigger than the rest 
+                    and has a hunger for conquest. The ships for the Hive represent the 
+                    combination of technology and their architectural structure that looks 
+                    similar to insects from Earth.
+                </p>
+                
+                <div id="hive-ships">
+                    <figure class="ship-align">
+                        <img src="Images/Hive_ships/Hive_Frigate.png" alt="Hive Frigate">
+                        <figcaption class="caption">Hive Frigate</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Hive_ships/Hive_Cruiser.png" alt="Hive Cruiser">
+                        <figcaption class="caption">Hive Cruiser</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Hive_ships/Hive_Battleship.png" alt="Hive Battleship">
+                        <figcaption class="caption">Hive Battleship</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Hive_ships/Hive_Destroyer.png" alt="Hive Destroyer">
+                        <figcaption class="caption">Hive Destroyer</figcaption>
+                    </figure>
+
+                    <figure class="ship-align">
+                        <img src="Images/Hive_ships/Hive_Dreadnaught.png" alt="Hive Dreadnaught">
+                        <figcaption class="caption">Hive Dreadnaught</figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+            <a href="portfolio_menu.html" class="level-link">
+                <h4 class="complete-quest">LEVEL COMPLETE</h4>
+            </a>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
